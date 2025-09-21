@@ -24,3 +24,12 @@ hs_err_pid*
 replay_pid*
 # Maven Target Folder
 target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Maven
+/target/
+
