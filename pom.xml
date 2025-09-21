@@ -15,14 +15,11 @@
     </properties>
 
     <dependencies>
-        <!-- JavaFX controls -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
         </dependency>
-
-        <!-- JavaFX fXML -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
@@ -30,17 +27,16 @@
         </dependency>
     </dependencies>
 
-	<build>
-	  <plugins>
-	    <plugin>
-	      <groupId>org.codehaus.mojo</groupId>
-	      <artifactId>exec-maven-plugin</artifactId>
-	      <version>3.1.0</version>
-	      <configuration>
-	        <mainClass>de.hochschulebochum.MainApp</mainClass>
-	      </configuration>
-	    </plugin>
-	  </plugins>
-	</build>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>de.hochschulebochum.MainApp</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
